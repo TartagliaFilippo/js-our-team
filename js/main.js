@@ -1,10 +1,5 @@
 // collego i miei p creati sull'html
-const ob0 = document.getElementById("object-1");
-const ob1 = document.getElementById("object-2");
-const ob2 = document.getElementById("object-3");
-const ob3 = document.getElementById("object-4");
-const ob4 = document.getElementById("object-5");
-const ob5 = document.getElementById("object-6");
+const myContainer = document.getElementById("my-container");
 
 // creo un array di oggetti
 const team = [
@@ -49,47 +44,12 @@ for (const value of team) {
 
 // stampo le inforazioni dei miei oggetti
 for (let i = 0; i < team.length; i++) {
-  if (i == 0) {
-    ob0.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="./img/${team[i].photo}">`;
-  } else if (i == 1) {
-    ob1.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="./img/${team[i].photo}">`;
-  } else if (i == 2) {
-    ob2.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="../img/${team[i].photo}">`;
-  } else if (i == 3) {
-    ob3.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="./img/${team[i].photo}">`;
-  } else if (i == 4) {
-    ob4.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="./img/${team[i].photo}">`;
-  } else if (i == 5) {
-    ob5.innerHTML =
-      team[i].name +
-      "/" +
-      team[i].task +
-      "/" +
-      `<img scr="./img/${team[i].photo}">`;
-  }
+  // creo dinamicamete il mio contenitore di oggetti
+  myContainer.innerHTML += `<div class="card col-3 my-4 mx-5">
+      <img src="./img/${team[i].photo}" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">Nome Operatore: ${team[i].name}</p>
+        <p class="card-text">Mansione: ${team[i].task}</p>
+      </div>
+  </div>`;
 }
