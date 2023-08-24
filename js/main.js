@@ -50,16 +50,46 @@ for (const value of team) {
 // stampo le inforazioni dei miei oggetti
 for (let i = 0; i < team.length; i++) {
   if (i == 0) {
-    ob0.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob0.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="./img/${team[i].photo}">`;
   } else if (i == 1) {
-    ob1.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob1.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="./img/${team[i].photo}">`;
   } else if (i == 2) {
-    ob2.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob2.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="../img/${team[i].photo}">`;
   } else if (i == 3) {
-    ob3.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob3.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="./img/${team[i].photo}">`;
   } else if (i == 4) {
-    ob4.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob4.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="./img/${team[i].photo}">`;
   } else if (i == 5) {
-    ob5.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+    ob5.innerHTML =
+      team[i].name +
+      "/" +
+      team[i].task +
+      "/" +
+      `<img scr="./img/${team[i].photo}">`;
   }
 }
