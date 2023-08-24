@@ -1,3 +1,11 @@
+// collego i miei p creati sull'html
+const ob0 = document.getElementById("object-1");
+const ob1 = document.getElementById("object-2");
+const ob2 = document.getElementById("object-3");
+const ob3 = document.getElementById("object-4");
+const ob4 = document.getElementById("object-5");
+const ob5 = document.getElementById("object-6");
+
 // creo un array di oggetti
 const team = [
   {
@@ -37,4 +45,21 @@ console.table(team);
 // creo un ciclo for che analizzi gli elementi all'interno del mio array
 for (const value of team) {
   console.log(value);
+}
+
+// stampo le inforazioni dei miei oggetti
+for (let i = 0; i < team.length; i++) {
+  if (i == 0) {
+    ob0.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  } else if (i == 1) {
+    ob1.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  } else if (i == 2) {
+    ob2.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  } else if (i == 3) {
+    ob3.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  } else if (i == 4) {
+    ob4.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  } else if (i == 5) {
+    ob5.innerHTML = team[i].name + "/" + team[i].task + "/" + team[i].photo;
+  }
 }
