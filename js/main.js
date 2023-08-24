@@ -33,3 +33,8 @@ const team = [
 ];
 
 console.table(team);
+
+// creo un ciclo for che analizzi gli elementi all'interno del mio array
+for (const value of team) {
+  console.log(value);
+}
